@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name:amenu 
+# key: amenu
+# --
+<nav ${1:class="${2:menu}"} ${3:id="${4:menu}"}>
+  <ul>
+    <li>
+      <a routerLink="${5:/ruta}">${6:Menu Item}</a>
+    </li>
+    <li>
+      <a routerLink="${7:/ruta}">${8:Menu Item}</a>
+    </li>
+    $0
+    <li>
+      <a (click)="logout()" href="#">Logout</a>
+    </li>
+  </ul>
+</nav>
+

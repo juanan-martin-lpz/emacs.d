@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: Angular Service
+# key: aservice
+# --
+
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class $1 {
+
+  constructor(private _http: HttpClient) {
+
+  }
+
+  $0
+}

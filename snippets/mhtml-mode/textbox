@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: textbox
+# key: textbox
+# --
+<input type="text" ${1:name="${2:nombre}"} ${3:id="${4:some_id}"} ${5:class="${6:some_class}"} ${7:placeholder="${9:placeholder}"} />

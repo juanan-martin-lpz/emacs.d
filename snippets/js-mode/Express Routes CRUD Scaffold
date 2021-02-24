@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: Express Routes CRUD Scaffold
+# key: excrud
+# --
+
+const express = require('express');
+const app = express();
+
+
+app.get('/', (req, res) => {
+   $1
+});
+
+app.post('/', (req, res) => {
+   $2
+});
+
+app.put('/:id', (req, res) => {
+   $3
+});
+
+app.delete('/:id', (req, res) => {
+   $4
+});
+
+
+module.exports = app

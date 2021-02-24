@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Angular Routing
+# key: ngroute
+# --
+
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+
+const appRoutes: Routes = [
+  { path: '', canActivate: [$1],  component: $2 },
+  { path: '$3', component: $4 }
+];
+
+export const appRoutingProviders: any[] = [];
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+

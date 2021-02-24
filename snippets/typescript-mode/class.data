@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Data Class
+# key: dclass
+# --
+export class ${1:Class} {
+  ${4:constructor}(
+     ${5:arg},
+     ${6:arg}
+  )
+  {
+  }
+}
+

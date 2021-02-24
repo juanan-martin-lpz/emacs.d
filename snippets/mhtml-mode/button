@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: button
+# key: button
+# --
+<button ${1:name="${2:nombre}"} ${3:id="${4:some_id}"} ${5:class="${6:some_class}"} ${7:action="${9:action()}"}>$0</button>
+

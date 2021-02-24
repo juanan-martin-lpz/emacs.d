@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: submit
+# key: submit
+# --
+<button ${1:name="${2:nombre}"} ${3:id="${4:some_id}"} ${5:class="${6:some_class}"} type="submit" >$0</button>
+

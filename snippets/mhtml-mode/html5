@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: HTML5Doc
+# key: html5
+# --
+<!doctype html>
+  <html>
+    <head>
+      <title>Titulo</title>
+
+      <meta charset="UTF-8" content="content">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+    </body>
+</html>

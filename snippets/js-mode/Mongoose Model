@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Mongoose Model
+# key: mmodel
+# --
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+var $1 = new Schema({
+  $3: { type: $4 }
+});
+
+var $2 = mongoose.model('$1', $1);
+
+module.exports = $2;

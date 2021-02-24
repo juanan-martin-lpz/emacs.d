@@ -1,0 +1,19 @@
+# Folders
+auto-save-list
+elpa*
+persp-confs
+site-lisp
+straight
+transient
+
+#Files
+projectile*
+recentf
+org*
+history
+custom.el
+ac*
+.bookmarks.el
+.session
+.smex-items
+.uptimes.el
