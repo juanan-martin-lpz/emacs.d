@@ -432,11 +432,14 @@ typical word processor."
   (setq org-log-into-drawer t)
 
   (setq org-agenda-files
-        '("~/OrgFiles/Tasks.org"
-          "~/OrgFiles/Habits.org"
-          "~/OrgFiles/Birthdays.org"))
+        '("~/Dropbox/Aplicaciones/MobileOrg/Tasks.org"
+          "~/Dropbox/Aplicaciones/MobileOrg/Birthdays.org"))
 
-  (setq org-default-notes-file '("~/OrgFiles/inbox.org'"))
+  (setq org-directory "~/OrgFiles")
+  (setq org-default-notes-file '("~/OrgFiles/notes.org'"))
+
+  (setq org-mobile-inbox-for-pull "~/OrgFiles/flagged.org")
+  (setq org-mobile-directory "~/Dropbox/Aplicaciones/MobileOrg")
 
   (require 'org-habit)
   (add-to-list 'org-modules 'org-habit)

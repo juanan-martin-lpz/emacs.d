@@ -77,7 +77,7 @@
 ;; (unless (package-installed-p 'use-package)
 ;;   (package-refresh-contents)
 ;;   (package-install 'use-package))
-(require-package 'use-package)
+;; (require-package 'use-package)
 ;;
 ;;
 ;;
@@ -89,6 +89,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
+(require 'init-fontawesome)
 (require 'init-themes)
 (require 'init-winsuper)
 (require 'init-osx-keys)
@@ -176,13 +177,15 @@
 ;; (require 'init-npmproj)
 (require 'init-codesearch)
 (require 'init-neotree)
-(require 'init-fontawesome)
 
 (require 'init-docsets)
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
 (require 'init-ledger)
+
+;; LSP
+(require 'init-lsp)
 
 
 ;; Extra packages which don't require any configuration
