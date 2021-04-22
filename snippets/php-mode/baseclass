@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: baseclass
+# key: PHP Base Class
+# --
+
+class $1 {
+  $2
+}
+
+$0
+
+

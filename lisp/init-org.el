@@ -435,10 +435,10 @@ typical word processor."
         '("~/Dropbox/Aplicaciones/MobileOrg/Tasks.org"
           "~/Dropbox/Aplicaciones/MobileOrg/Birthdays.org"))
 
-  (setq org-directory "~/OrgFiles")
-  (setq org-default-notes-file '("~/OrgFiles/notes.org'"))
+  (setq org-directory "~/Dropbox/Aplicaciones/MobileOrg")
+  (setq org-default-notes-file '("~/Dropbox/Aplicaciones/MobileOrg/notes.org'"))
 
-  (setq org-mobile-inbox-for-pull "~/OrgFiles/flagged.org")
+  (setq org-mobile-inbox-for-pull "~/Dropbox/Aplicaciones/MobileOrg/flagged.org")
   (setq org-mobile-directory "~/Dropbox/Aplicaciones/MobileOrg")
 
   (require 'org-habit)

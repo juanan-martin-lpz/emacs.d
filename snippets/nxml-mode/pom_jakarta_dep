@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: POM JakartaEE
+# key: pom_jakarta_dep
+# --
+<dependency>
+   <groupId>javax</groupId>
+   <artifactId>javaee-api</artifactId>
+   <version>8.0.1</version>
+   <scope>provided</scope>
+</dependency>
+
