@@ -141,6 +141,7 @@
 (require 'init-purescript)
 (require 'init-ruby)
 (require 'init-rails)
+(require 'init-elixir)
 (require 'init-sql)
 (require 'init-nim)
 (require 'init-rust)

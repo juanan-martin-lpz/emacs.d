@@ -25,6 +25,20 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 
+(projectile-register-project-type 'maven '("pom.xml")
+                                  :project-file "pom.xml"
+				  :compile "mvn compile"
+				  :test "mvn test"
+				  :run "mvn install"
+				  :test-suffix ".spec")
+
+
+(projectile-register-project-type 'composer '("composer.json")
+                                  :project-file "composer.json"
+				  :compile "composer install"
+				  :test "composer test"
+				  :run "composer serve"
+				  :test-suffix ".spec")
 
 (projectile-register-project-type 'npm '("package.json")
                                   :project-file "package.json"
@@ -41,7 +55,25 @@
                                   :src-dir "src"
 				  :test-suffix ".spec")
 
-(setq projectile-globally-ignored-directories '("*node_modules" "*dist" "*.vscode" "*.stack-work" "*.git" ))
+(projectile-register-project-type 'spago '("spago.dhall")
+                                  :project-file "spago.json"
+				  :compile "spago build"
+				  :test "spago test"
+				  :run "spago run"
+				  :test-suffix ".spec")
+
+
+(defun projectile-create-projectile-project ()
+  "Crea un proyecto projectile en la carpeta indicada."
+  (interactive)
+  (make-directory)
+  (create-empty-file ".projectile")
+  (magit-init)
+  )
+
+(define-key projectile-mode-map (kbd "C-c p n") 'projectile-create-projectile-project)
+
+(setq projectile-globally-ignored-directories '("*node_modules" "*dist" "*.vscode" "*.stack-work" "*.git" "*spago" "bower_components" ))
 
 (projectile-mode +1)
 
