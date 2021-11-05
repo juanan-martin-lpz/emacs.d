@@ -74,10 +74,11 @@
 ;;----------------------------------------------------------------------------
 ;; use-package
 ;;----------------------------------------------------------------------------
-;; (unless (package-installed-p 'use-package)
-;;   (package-refresh-contents)
-;;   (package-install 'use-package))
-;; (require-package 'use-package)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(require-package 'use-package)
 ;;
 ;;
 ;;
@@ -183,7 +184,7 @@
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
-(require 'init-ledger)
+;; (require 'init-ledger)
 
 ;; LSP
 (require 'init-lsp)
