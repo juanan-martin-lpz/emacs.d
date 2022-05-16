@@ -8,8 +8,13 @@
 ;; TODO: link commits from vc-log to magit-show-commit
 ;; TODO: smerge-mode
 (require-package 'git-blamed)
+<<<<<<< HEAD
 ;;(require-package 'gitignore-mode)
 ;;(require-package 'gitconfig-mode)
+=======
+;; (require-package 'gitignore-mode)
+;; (require-package 'gitconfig-mode)
+>>>>>>> refs/remotes/origin/main
 (when (maybe-require-package 'git-timemachine)
   (global-set-key (kbd "C-x v t") 'git-timemachine-toggle))
 

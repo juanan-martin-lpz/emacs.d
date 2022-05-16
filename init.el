@@ -77,6 +77,10 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 (require-package 'use-package)
 
 
@@ -122,6 +126,7 @@
 (require 'init-textile)
 (require 'init-org)
 (require 'init-http)
+<<<<<<< HEAD
 
 (require 'init-customs)
 
@@ -222,6 +227,23 @@
     (require 'init-slime)
     (require 'init-common-lisp)
     ))
+=======
+(require 'init-python)
+(require 'init-haskell)
+(require 'init-elm)
+(require 'init-purescript)
+(require 'init-ruby)
+(require 'init-rails)
+(require 'init-elixir)
+(require 'init-sql)
+(require 'init-nim)
+(require 'init-rust)
+(require 'init-toml)
+(require 'init-yaml)
+(require 'init-docker)
+(require 'init-terraform)
+(require 'init-nix)
+>>>>>>> refs/remotes/origin/main
 
 (maybe-require-package 'nginx-mode)
 
@@ -250,7 +272,10 @@
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
-(require 'init-ledger)
+;; (require 'init-ledger)
+
+;; LSP
+(require 'init-lsp)
 
 ;; LSP
 (require 'init-lsp)
