@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: POM Maven Compiler Config
+# key: pom_maven_compiler
+# --
+
+<configuration>
+  <source>1.8</source>
+  <target>1.8</target>
+</configuration>
+

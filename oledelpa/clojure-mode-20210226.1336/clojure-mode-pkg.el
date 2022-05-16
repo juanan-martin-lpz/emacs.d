@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/the_b/.emacs.d/elpa-27.1/clojure-mode-20210226.1336/clojure-mode.el  -*- no-byte-compile: t -*-
+(define-package "clojure-mode" "20210226.1336" "Major mode for Clojure code" '((emacs "25.1")) :commit "cccddea53b816c5d06c3f4fe0ba798b9f7047a63" :maintainer '("Bozhidar Batsov" . "bozhidar@batsov.com") :keywords '("languages" "clojure" "clojurescript" "lisp") :url "http://github.com/clojure-emacs/clojure-mode")

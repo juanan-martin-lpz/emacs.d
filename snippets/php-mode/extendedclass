@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: extendedclass
+# key: PHP Extended Class
+# --
+class $1 extends $2 {
+  $3
+}
+
+$0
+

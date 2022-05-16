@@ -74,13 +74,11 @@
 ;;----------------------------------------------------------------------------
 ;; use-package
 ;;----------------------------------------------------------------------------
-;; (unless (package-installed-p 'use-package)
-;;   (package-refresh-contents)
-;;   (package-install 'use-package))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 (require-package 'use-package)
-;;
-;;
-;;
+
 
 
 (require-package 'diminish)
@@ -89,6 +87,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
+(require 'init-fontawesome)
 (require 'init-themes)
 (require 'init-winsuper)
 (require 'init-osx-keys)
@@ -99,7 +98,6 @@
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flycheck)
-
 (require 'init-recentf)
 (require 'init-smex)
 (require 'init-hippie-expand)
@@ -122,41 +120,112 @@
 (require 'init-compile)
 (require 'init-crontab)
 (require 'init-textile)
-(require 'init-markdown)
-(require 'init-csv)
-(require 'init-erlang)
-(require 'init-javascript)
-(require 'init-typescript)
-(require 'init-php)
 (require 'init-org)
-(require 'init-nxml)
-(require 'init-html)
-(require 'init-css)
-(require 'init-haml)
 (require 'init-http)
-(require 'init-python)
-(require 'init-haskell)
-(require 'init-elm)
-(require 'init-purescript)
-(require 'init-ruby)
-(require 'init-rails)
-(require 'init-sql)
-(require 'init-nim)
-(require 'init-rust)
-(require 'init-toml)
-(require 'init-yaml)
-(require 'init-docker)
-(require 'init-terraform)
-(require 'init-nix)
+
+(require 'init-customs)
+
+;;----------------------------------------------------------------------------
+;; Variables configured via the interactive 'customize' interface
+;;----------------------------------------------------------------------------
+(when (file-exists-p custom-file)
+  (load custom-file))
+
+;;----------------------------------------------------------------------------
+;; Cargamos el soporte para los lenguajes de programacion
+;;----------------------------------------------------------------------------
+
+(when 'markdown
+  (require 'init-markdown))
+
+(when 'csv
+  (require 'init-csv))
+
+(when 'erlang
+  (require 'init-erlang))
+
+(when 'javascript
+  (require 'init-javascript))
+
+(when 'typescript
+  (require 'init-typescript))
+
+(when 'php
+  (require 'init-php))
+
+(when 'nxml
+  (require 'init-nxml))
+
+(when 'html
+  (require 'init-html))
+
+(when 'css
+  (require 'init-css))
+
+(when 'haml
+  (require 'init-haml))
+
+(when 'python
+  (require 'init-python))
+
+(when 'haskell
+  (require 'init-haskell))
+
+(when 'elm
+  (require 'init-elm))
+
+(when 'purescript
+  (require 'init-purescript))
+
+(when 'ruby
+  (require 'init-ruby))
+
+(when 'rails
+  (require 'init-rails))
+
+(when 'elixir
+  (require 'init-elixir))
+
+(when 'sql
+  (require 'init-sql))
+
+(when 'nim
+  (require 'init-nim))
+
+(when 'rust
+  (require 'init-rust))
+
+
+(when (bound-and-true-p toml)
+  (require 'init-toml))
+
+(when 'yaml
+  (require 'init-yaml))
+
+(when 'docker
+  (require 'init-docker))
+
+(when 'terraform
+  (require 'init-terraform))
+
+(when 'nix
+  (require 'init-nix))
+
+(when 'clojure
+  (progn
+    (require 'init-clojure)
+    (require 'init-clojure-cider)))
+
+(when 'lisp
+  (progn
+    (require 'init-lisp)
+    (require 'init-slime)
+    (require 'init-common-lisp)
+    ))
 
 (maybe-require-package 'nginx-mode)
 
 (require 'init-paredit)
-(require 'init-lisp)
-(require 'init-slime)
-(require 'init-clojure)
-(require 'init-clojure-cider)
-(require 'init-common-lisp)
 
 (require 'init-yasnippet)
 
@@ -176,13 +245,15 @@
 ;; (require 'init-npmproj)
 (require 'init-codesearch)
 (require 'init-neotree)
-(require 'init-fontawesome)
 
 (require 'init-docsets)
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
 (require 'init-ledger)
+
+;; LSP
+(require 'init-lsp)
 
 
 ;; Extra packages which don't require any configuration
@@ -262,12 +333,6 @@
   "Add entries to `auto-mode-alist' to use `MODE' for all given file `PATTERNS'."
   (dolist (pattern patterns)
     (add-to-list 'auto-mode-alist (cons pattern mode))))
-
-;;----------------------------------------------------------------------------
-;; Variables configured via the interactive 'customize' interface
-;;----------------------------------------------------------------------------
-(when (file-exists-p custom-file)
-  (load custom-file))
 
 
 ;;----------------------------------------------------------------------------

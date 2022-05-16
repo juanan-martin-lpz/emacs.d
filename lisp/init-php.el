@@ -9,5 +9,9 @@
     (with-eval-after-load 'company
       (add-to-list 'company-backends 'company-ac-php-backend))))
 
+(require-package 'composer)
+(require-package 'phpstan)
+(require-package 'phan)
+
 (provide 'init-php)
 ;;; init-php.el ends here

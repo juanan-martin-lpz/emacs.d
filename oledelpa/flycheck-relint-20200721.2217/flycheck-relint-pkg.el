@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/the_b/.emacs.d/elpa-27.1/flycheck-relint-20200721.2217/flycheck-relint.el  -*- no-byte-compile: t -*-
+(define-package "flycheck-relint" "20200721.2217" "A Flycheck checker for elisp regular expressions" '((emacs "26.1") (flycheck "0.22") (relint "1.15")) :commit "86ebb4dac919eda01341b15b9c896742b9d17c30" :authors '(("Steve Purcell" . "steve@sanityinc.com")) :maintainer '("Steve Purcell" . "steve@sanityinc.com") :keywords '("lisp") :url "https://github.com/purcell/flycheck-relint")

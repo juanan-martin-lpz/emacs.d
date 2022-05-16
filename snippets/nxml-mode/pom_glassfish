@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: POM Glassfish
+# key: pom_glassfish
+# --
+<plugin>
+    <groupId>org.glassfish.maven.plugin</groupId>
+    <artifactId>maven-glassfish-plugin</artifactId>
+    <version>2.1</version>
+    <configuration>
+            <glassfishDirectory>$0</glassfishDirectory>
+            <user>$1</user>
+            <adminPassword>$2</adminPassword>
+            <autoCreate>true</autoCreate>
+            <debug>true</debug>
+            <echo>true</echo>
+            <terse>false</terse>
+            <domain>
+                <name>${project.artifactId}</name>
+                <adminPort>4048</adminPort>
+            </domain>
+            <components>
+                <component>
+                    <name>${project.artifactId}</name>
+                    <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
+                </component>
+            </components>
+    </configuration>
+</plugin>

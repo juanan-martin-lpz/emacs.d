@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: java class
+# key: javaclass
+# --
+
+package $1;
+
+public class $2 {
+
+}

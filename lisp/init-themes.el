@@ -12,9 +12,29 @@
 
 (straight-use-package 'doom-modeline)
 
-(straight-use-package 'all-the-icons)
-(straight-use-package 'all-the-icons-dired)
+;;(straight-use-package 'all-the-icons)
+;;(straight-use-package 'all-the-icons-dired)
 
+;;(require-package 'all-the-icons)
+;;(require-package 'all-the-icons-dired)
+
+
+                                        ;path to libraries
+                                        ;all-the-icons-fonts
+(defvar all-the-icons-p "C:/Users/the_b/all_the_icons_fonts/")
+                                        ;all-the-icons
+(use-package all-the-icons
+  :after (:any neo-tree all-the-icons-dired-mode)
+  :load-path all-the-icons-p
+  );end all-the-icons
+                                        ;all-the-icons-dired
+(use-package all-the-icons-dired
+  :config
+                                        ;(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+                                        ;:hook (dired-mode-hook . all-the-icons-dired-mode)
+                                        ;defer loading of all-the-icons-dired until called
+  :commands all-the-icons-dired-mode
+  );end all the icons dired
 
 (use-package doom-themes
   :init (load-theme 'doom-palenight t))

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Form Field
+# key: field
+# --
+<label for="$1">Campo</label>
+<input type="text" id="$1" name="$1">
+

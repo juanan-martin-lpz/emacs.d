@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: servlet
+# key: servlet
+# --
+package $0;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+
+/**
+ *
+ * @author the_b
+ */
+@WebServlet("$1")
+public class $2 extends HttpServlet {
+ 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    }
+}
+

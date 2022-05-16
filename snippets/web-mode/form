@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Form with Fields
+# key: myform
+# --
+<form action="$1" method="POST">
+      <label for="$2">Campo</label>
+      <input type="text" id="$2" name="$2">
+</form>

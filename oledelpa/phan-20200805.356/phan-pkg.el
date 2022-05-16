@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/the_b/.emacs.d/elpa-27.1/phan-20200805.356/phan.el  -*- no-byte-compile: t -*-
+(define-package "phan" "20200805.356" "Utility functions for Phan (PHP static analizer)" '((emacs "24") (composer "0.0.8") (f "0.17")) :commit "b7d523630bb072c4dbcfa9995dc734b25b72a69f" :authors '(("USAMI Kenta" . "tadsan@pixiv.com")) :maintainer '("USAMI Kenta" . "tadsan@pixiv.com") :keywords '("tools" "php") :url "https://github.com/emacs-php/phan.el")
