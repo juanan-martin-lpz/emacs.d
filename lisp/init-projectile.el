@@ -67,9 +67,8 @@
   "Crea un proyecto projectile en la carpeta indicada."
   (interactive)
   (make-directory)
-  (create-empty-file ".projectile")
-  (magit-init)
-  )
+  (make-empty-file ".projectile" pwd)
+  (magit-init))
 
 (define-key projectile-mode-map (kbd "C-c p n") 'projectile-create-projectile-project)
 
