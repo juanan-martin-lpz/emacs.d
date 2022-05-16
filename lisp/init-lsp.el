@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
 ;;; Commentary:
 
@@ -42,10 +41,8 @@
 (provide 'init-lsp)
 
 ;;; init-lsp.el ends here
-=======
 ;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
 ;;; Commentary:
-
 ;; This file bootstraps the configuration, which is divided into
 ;; a number of other files.
 
@@ -82,8 +79,5 @@
 
 (add-hook 'java-mode-hook #'lsp)
 
-
 (provide 'init-lsp)
-
 ;;; init-lsp.el ends here
->>>>>>> refs/remotes/origin/main

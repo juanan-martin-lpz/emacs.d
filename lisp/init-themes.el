@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ;;; init-themes.el --- Defaults for themes -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
@@ -100,7 +99,6 @@
 
 (provide 'init-themes)
 ;;; init-themes.el ends here
-=======
 ;;; init-themes.el --- Defaults for themes -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
@@ -199,7 +197,5 @@
       (not (display-graphic-p)))
     (add-to-list 'dimmer-exclusion-predicates 'sanityinc/display-non-graphic-p)))
 
-
 (provide 'init-themes)
 ;;; init-themes.el ends here
->>>>>>> refs/remotes/origin/main

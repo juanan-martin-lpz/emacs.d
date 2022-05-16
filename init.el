@@ -77,13 +77,6 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/main
-(require-package 'use-package)
-
-
 
 (require-package 'diminish)
 (maybe-require-package 'scratch)
@@ -126,7 +119,6 @@
 (require 'init-textile)
 (require 'init-org)
 (require 'init-http)
-<<<<<<< HEAD
 
 (require 'init-customs)
 
@@ -140,110 +132,47 @@
 ;; Cargamos el soporte para los lenguajes de programacion
 ;;----------------------------------------------------------------------------
 
-(when 'markdown
-  (require 'init-markdown))
+(require 'init-lisp)
+(require 'init-slime)
+(require 'init-common-lisp)
 
-(when 'csv
-  (require 'init-csv))
-
-(when 'erlang
-  (require 'init-erlang))
-
-(when 'javascript
-  (require 'init-javascript))
-
-(when 'typescript
-  (require 'init-typescript))
-
-(when 'php
-  (require 'init-php))
-
-(when 'nxml
-  (require 'init-nxml))
-
-(when 'html
-  (require 'init-html))
-
-(when 'css
-  (require 'init-css))
-
-(when 'haml
-  (require 'init-haml))
-
-(when 'python
-  (require 'init-python))
-
-(when 'haskell
-  (require 'init-haskell))
-
-(when 'elm
-  (require 'init-elm))
-
-(when 'purescript
-  (require 'init-purescript))
-
-(when 'ruby
-  (require 'init-ruby))
-
-(when 'rails
-  (require 'init-rails))
-
-(when 'elixir
-  (require 'init-elixir))
-
-(when 'sql
-  (require 'init-sql))
-
-(when 'nim
-  (require 'init-nim))
-
-(when 'rust
-  (require 'init-rust))
-
-
-(when (bound-and-true-p toml)
-  (require 'init-toml))
-
-(when 'yaml
-  (require 'init-yaml))
-
-(when 'docker
-  (require 'init-docker))
-
-(when 'terraform
-  (require 'init-terraform))
-
-(when 'nix
-  (require 'init-nix))
-
-(when 'clojure
-  (progn
-    (require 'init-clojure)
-    (require 'init-clojure-cider)))
-
-(when 'lisp
-  (progn
-    (require 'init-lisp)
-    (require 'init-slime)
-    (require 'init-common-lisp)
-    ))
-=======
+(require 'init-javascript)
+(require 'init-typescript)
 (require 'init-python)
-(require 'init-haskell)
-(require 'init-elm)
-(require 'init-purescript)
-(require 'init-ruby)
-(require 'init-rails)
-(require 'init-elixir)
+(require 'init-php)
+(require 'init-nxml)
+(require 'init-html)
+(require 'init-css)
+
+;;(require 'init-haskell)
+;;(require 'init-elm)
+;;(require 'init-purescript)
+
+;;(require 'init-ruby)
+;;(require 'init-rails)
+
+;;(require 'init-haskell)
+;;(require 'init-elm)
+;;(require 'init-elixir)
+;;(require 'init-erlang)
+
 (require 'init-sql)
-(require 'init-nim)
-(require 'init-rust)
+(require 'init-markdown)
+(require 'init-csv)
+
+;;(require 'init-nim)
+;;(require 'init-rust)
+
 (require 'init-toml)
 (require 'init-yaml)
+
+;;(require 'init-clojure)
+;;(require 'init-clojure-cider)
+
+
 (require 'init-docker)
 (require 'init-terraform)
 (require 'init-nix)
->>>>>>> refs/remotes/origin/main
 
 (maybe-require-package 'nginx-mode)
 
@@ -277,12 +206,7 @@
 ;; LSP
 (require 'init-lsp)
 
-;; LSP
-(require 'init-lsp)
-
-
 ;; Extra packages which don't require any configuration
-
 
 (unless (package-installed-p 'esup)
   (package-refresh-contents)
