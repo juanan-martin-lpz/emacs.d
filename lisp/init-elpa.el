@@ -19,6 +19,8 @@
 ;;(add-to-list 'package-archives '( "elpa" . "https://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives '( "org" . "https://orgmode.org/elpa/") t)
 
+(add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/") t)
+
 ;; Official MELPA Mirror, in case necessary.
 ;;(add-to-list 'package-archives (cons "melpa-mirror" (concat proto "://www.mirrorservice.org/sites/melpa.org/packages/")) t)
 

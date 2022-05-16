@@ -63,11 +63,28 @@
 				  :test-suffix ".spec")
 
 
+
+
+;; (defun projectile-create-projectile-project ()
+;;   "Crea un proyecto projectile en la carpeta indicada."
+;;   (interactive ((project (read-string "Nombre del Proyecto"))))
+;;   (interactive (let (directory (read-directory-name "Carpeta? " choose-directory-default-directory))))
+;;   (make-directory project directory)
+;;   (make-empty-file ".projectile" directory))
+
+
+
+;; (defvar default-project-name "Proyecto")
+
+;; (defvar choose-directory-default-directory "C:\\Proyectos"
+;;   "Initial starting point.")
+
+
 (defun projectile-create-projectile-project ()
   "Crea un proyecto projectile en la carpeta indicada."
   (interactive)
   (make-directory)
-  (make-empty-file ".projectile" pwd)
+  (make-empty-file '.projectile)
   (magit-init))
 
 (define-key projectile-mode-map (kbd "C-c p n") 'projectile-create-projectile-project)
